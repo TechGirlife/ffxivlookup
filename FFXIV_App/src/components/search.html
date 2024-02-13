@@ -8,23 +8,27 @@
 </head>
 <body>
   <header>
-    <h1>FFXIV Item Search</h1>
+    <div class="logo">
+      <img src="logo.png" alt="FFXIV Logo">
+    </div>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Search for an item...">
+      <button type="submit" id="search-button">Search</button>
+    </div>
   </header>
   <main>
     <section id="search-container">
-      <h2>Search for an Item</h2>
-      <form id="search-form">
-        <input type="text" id="search-input" placeholder="Enter item name...">
-        <button type="submit">Search</button>
-      </form>
+      <h2>Search Results</h2>
+      <div id="results">
+        <!-- Search results will be displayed here -->
+      </div>
     </section>
   </main>
   <footer>
     <p>&copy; 2024 FFXIV Item Search</p>
   </footer>
   <script>
-    document.getElementById('search-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
+    document.getElementById('search-button').addEventListener('click', function() {
       const searchTerm = document.getElementById('search-input').value;
       window.location.href = `results.html?search=${searchTerm}`;
     });

@@ -1,104 +1,81 @@
-/* styles.css */
-
-/* Global styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
   }
   
   header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 200px;
+  }
+  
+  .search {
+    margin-top: 20px;
+  }
+  
+  .search input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search button {
+    padding: 10px 20px;
+    border: none;
     background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background-color: #0056b3;
   }
   
   main {
     padding: 20px;
   }
   
-  footer {
-    background-color: #f8f9fa;
+  h1, h2, h3 {
+    margin-top: 0;
     color: #333;
-    text-align: center;
+  }
+  
+  /* Results Page Styles */
+  #results-container {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  #results-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .result-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
     padding: 20px 0;
   }
   
-  /* ItemList Component */
-  .item {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  .item-details {
+    flex: 1;
+    padding-right: 20px;
   }
   
-  .item h3 {
-    margin-top: 0;
-  }
-  
-  /* SearchBar Component */
-  form {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 5px;
-    width: 200px;
-    margin-right: 10px;
-  }
-  
-  input[type="submit"] {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Pagination Component */
-  .pagination {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination li {
-    margin-right: 5px;
-  }
-  
-  .pagination button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-  
-  .pagination button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Example styling for API data */
-  .api-item {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-  }
-  
-  .api-item h3 {
-    margin-top: 0;
-  }
-  
-  .api-item p {
-    margin-bottom: 5px;
+  .item-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
   }
   

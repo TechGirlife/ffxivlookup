@@ -8,7 +8,13 @@
 </head>
 <body>
   <header>
-    <h1>Search Results</h1>
+    <div class="logo">
+      <img src="logo.png" alt="FFXIV Logo">
+    </div>
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Search for an item...">
+      <button type="submit" id="search-button">Search</button>
+    </div>
   </header>
   <main>
     <section id="results-container">
@@ -39,12 +45,14 @@
           const resultItem = document.createElement('div');
           resultItem.classList.add('result-item');
           resultItem.innerHTML = `
-            <h3>${result.Name}</h3>
-            <p>${result.Description}</p>
-            <p>Level Item: ${result.LevelItem}</p>
-            <p>Level Equip: ${result.LevelEquip}</p>
-            <p>Category: ${result.ItemUICategory.Name}</p>
-            <img src="${result.Icon}" alt="${result.Name} Icon">
+            <div class="item-details">
+              <h3>${result.Name}</h3>
+              <p>${result.Description}</p>
+              <p>Level Item: ${result.LevelItem}</p>
+              <p>Level Equip: ${result.LevelEquip}</p>
+              <p>Category: ${result.ItemUICategory.Name}</p>
+            </div>
+            <img src="${result.Icon}" alt="${result.Name}" class="item-icon">
           `;
           resultsDiv.appendChild(resultItem);
         });

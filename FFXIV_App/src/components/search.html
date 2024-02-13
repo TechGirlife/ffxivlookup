@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFXIV Item Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FFXIV Item Search</h1>
+  </header>
+  <main>
+    <section id="search-container">
+      <h2>Search for an Item</h2>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter item name...">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 FFXIV Item Search</p>
+  </footer>
+  <script>
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      const searchTerm = document.getElementById('search-input').value;
+      window.location.href = `results.html?search=${searchTerm}`;
+    });
+  </script>
+</body>
+</html>

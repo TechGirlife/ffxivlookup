@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* ItemList Component */
+  .item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .item h3 {
+    margin-top: 0;
+  }
+  
+  /* SearchBar Component */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pagination Component */
+  .pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination li {
+    margin-right: 5px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Example styling for API data */
+  .api-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+  
+  .api-item h3 {
+    margin-top: 0;
+  }
+  
+  .api-item p {
+    margin-bottom: 5px;
+  }
+  
